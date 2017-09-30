@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.abdulrahman.asus.PerfectHealth.BMI"
+    tools:showIn="@layout/app_bar_bmi"
+    android:layoutDirection="rtl"
+
+    android:background="#e7e2e2">
+
+   <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-3834466240178402/9291092661">
+    </com.google.android.gms.ads.AdView>
+
+    <LinearLayout
+        android:id="@+id/linare_Bmi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/adView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="UselessLeaf"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="الطول :"
+                android:textColor="#202020"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ems="6"
+                android:gravity="center"
+                android:hint="سنتميتر"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,LabelFor" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="الوزن :"
+                android:textColor="#202020"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ems="6"
+                android:gravity="center"
+                android:hint="كيلو جرام"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,LabelFor" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="#353535"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <com.abdulrahman.asus.PerfectHealth.widgets.myButton
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/barBmi"
+            android:onClick="calculateBmi"
+            android:text="حساب"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#353535"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="horizontal">
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="النتيجة :"
+                android:textColor="#202020"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/resultBMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#353535"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:textColor="#202020"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:text="تصنيف مؤشر كتلة الجسم :"
+            tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded,RtlSymmetry" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:paddingRight="5dp"
+                android:text="18.5 أو أقل = "
+                android:textColor="#202020"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded,RtlSymmetry" />
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نحيف."
+                android:textColor="#b60000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded,RtlSymmetry" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:paddingRight="5dp"
+                android:text="18.6 إلى 24.9 = "
+                android:textColor="#202020"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded,RtlSymmetry" />
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="وزن طبيعي."
+                android:textColor="#b60000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded,RtlSymmetry" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/textView68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:paddingRight="5dp"
+                android:text="25 إلى 29.9 = "
+                android:textColor="#202020"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded,RtlSymmetry" />
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="فوق الطبيعي."
+                android:textColor="#b60000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded,RtlSymmetry" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/textView61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:paddingRight="5dp"
+                android:text="30 أو أكثر = "
+                android:textColor="#202020"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded,RtlSymmetry" />
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="بدين."
+                android:textColor="#b60000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded,RtlSymmetry" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

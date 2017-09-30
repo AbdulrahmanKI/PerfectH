@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.abdulrahman.asus.PerfectHealth.sport"
+    tools:showIn="@layout/app_bar_sport"
+    android:background="#b9b7fa">
+
+    <ScrollView
+        android:id="@+id/scrollv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="UselessLeaf">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/neck"
+                        tools:ignore="ContentDescription" />
+
+                    <com.abdulrahman.asus.PerfectHealth.widgets.myButton
+                        android:id="@+id/but_neck"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:paddingTop="125dp"
+                        android:text="الرقبة"
+                        android:onClick="neck_b"
+                        android:background="@drawable/buttonpress"
+                        android:textSize="20sp"
+                        tools:ignore="ButtonStyle,HardcodedText" />
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="5dp">
+
+                    <com.abdulrahman.asus.PerfectHealth.widgets.myButton
+                        android:id="@+id/but_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/buttonpress"
+                        android:paddingTop="125dp"
+                        android:text="الظهر"
+                        android:onClick="back_b"
+                        android:textSize="20sp"
+                        tools:ignore="ButtonStyle,HardcodedText,InefficientWeight" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/back"
+                        tools:ignore="ContentDescription" />
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="UselessLeaf">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageVisdew4"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/chest"
+                        tools:ignore="ContentDescription" />
+
+                    <com.abdulrahman.asus.PerfectHealth.widgets.myButton
+                        android:id="@+id/but_chest"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:paddingTop="125dp"
+                        android:text="الصدر"
+                        android:onClick="chest_b"
+                        android:background="@drawable/buttonpress"
+                        android:textSize="20sp"
+                        tools:ignore="ButtonStyle,HardcodedText" />
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="5dp">
+
+                    <com.abdulrahman.asus.PerfectHealth.widgets.myButton
+                        android:id="@+id/but_abs"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/buttonpress"
+                        android:paddingTop="125dp"
+                        android:text="البطن"
+                        android:onClick="abs_b"
+                        android:textSize="20sp"
+                        tools:ignore="ButtonStyle,HardcodedText,InefficientWeight" />
+
+                    <ImageView
+                        android:id="@+id/imageViedw5"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/abs"
+                        tools:ignore="ContentDescription" />
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="UselessLeaf">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageVisdefw4"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/shoulder"
+                        tools:ignore="ContentDescription" />
+
+                    <com.abdulrahman.asus.PerfectHealth.widgets.myButton
+                        android:id="@+id/but_shoulder"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:paddingTop="125dp"
+                        android:text="الأكتاف"
+                        android:onClick="shoulder_b"
+                        android:background="@drawable/buttonpress"
+                        android:textSize="20sp"
+                        tools:ignore="ButtonStyle,HardcodedText" />
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="5dp">
+
+                    <com.abdulrahman.asus.PerfectHealth.widgets.myButton
+                        android:id="@+id/but_arm"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/buttonpress"
+                        android:paddingTop="125dp"
+                        android:text="اليدين"
+                        android:onClick="arm_b"
+                        android:textSize="20sp"
+                        tools:ignore="ButtonStyle,HardcodedText,InefficientWeight" />
+
+                    <ImageView
+                        android:id="@+id/imageVieddw5"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/arm"
+                        tools:ignore="ContentDescription" />
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="UselessLeaf">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="5dp">
+
+                    <com.abdulrahman.asus.PerfectHealth.widgets.myButton
+                        android:id="@+id/but_leg"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/buttonpress"
+                        android:paddingTop="125dp"
+                        android:text="الأرجل"
+                        android:onClick="leg_b"
+                        android:textSize="20sp"
+                        tools:ignore="ButtonStyle,HardcodedText,InefficientWeight" />
+
+                    <ImageView
+                        android:id="@+id/imageViedadw5"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/leg"
+                        tools:ignore="ContentDescription" />
+
+
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/bdustton6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    tools:ignore="ButtonStyle,HardcodedText" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

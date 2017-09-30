@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.abdulrahman.asus.PerfectHealth.Vitamin"
+    tools:showIn="@layout/app_bar_vitamin"
+    android:descendantFocusability="blocksDescendants"
+    android:layoutDirection="rtl">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize,UselessParent">
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="(A) فيتامين "
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/vitaminA"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/vitaminb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="(B1) فيتامين "
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/vitaminB1"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+            android:id="@+id/vitaminb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#cccccc"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="(B2) فيتامين "
+            android:textColor="@color/title_content_vitamin"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,RtlHardcoded"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/vitaminB2"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.google.android.gms.ads.NativeExpressAdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                ads:adUnitId="ca-app-pub-3834466240178402/4692081102"
+                ads:adSize="FULL_WIDTHx250">
+            </com.google.android.gms.ads.NativeExpressAdView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/vitaminb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="(B3) فيتامين "
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textb3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/vitaminB3"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/vitaminb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="(B5) فيتامين "
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textb5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/vitaminB5"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/vitaminb6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="(B6) فيتامين "
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textb6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/vitaminB6"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+            android:id="@+id/vitaminb7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#cccccc"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="(B7) فيتامين "
+            android:textColor="@color/title_content_vitamin"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textb7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/vitaminB7"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/vitaminb9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="(B9) فيتامين "
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textb9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/vitaminB9"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/vitaminb12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="(B12) فيتامين "
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textb12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/vitaminB12"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/vitaminC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="(C) فيتامين "
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/vitaminC"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/vitaminD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="(D) فيتامين "
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                 />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/vitaminD"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/vitaminK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="(K) فيتامين "
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/vitaminK"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/calssum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="الكالسيوم"
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textcalsum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/calsum"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/fosfor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="الفوسفور"
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textfosfor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/fosfor"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/mag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="الماغنيزيوم"
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textmag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/mag"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+            android:id="@+id/sodwm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#cccccc"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="الصوديوم"
+            android:textColor="@color/title_content_vitamin"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,RtlHardcoded"
+            />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textsodwm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/sodwm"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/botasum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="البوتاسيوم"
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textbotasum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/botasum"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/clorud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="الكلوريد"
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textclorud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/clorud"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/kpreet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="الكبريت"
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textkpreet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/kpreet"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/iron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="الحديد"
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textiron"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/iron"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/mang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="المنغنيز"
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textmang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/mang"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/nhass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="النحاس"
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textnhass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/nhass"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/uood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="اليود"
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textuood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/uood"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/zenk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="الزنك"
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textzenk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/zenk"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/florud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="الفلورايد"
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textflorud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/florud"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/selenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="السيلينيوم"
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                tools:ignore="TooManyViews">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textselenum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/selenum"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/moled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="الموليبدينوم"
+                android:textColor="@color/title_content_vitamin"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="@color/content_vitamin"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                    android:id="@+id/textmoled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/moled"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

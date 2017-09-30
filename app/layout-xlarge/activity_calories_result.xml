@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abdulrahman.asus.PerfectHealth.Calories_menu.CaloriesResult"
+    tools:layout_editor_absoluteY="25dp"
+    android:background="#f2f2ff"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="UselessLeaf"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf,UselessParent">
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/cla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/barCalories"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingTop="10dp"
+                android:text="@string/caloriesnow"
+                android:textColor="#00001a"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/resultNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="15dp"
+                android:textColor="#515151"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf,UselessParent">
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/loss1kg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/barCalories"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingTop="10dp"
+                android:text="@string/caloriesloss"
+                android:textColor="#00001a"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/Aloss1kg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="15dp"
+                android:textColor="#515151"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf,UselessParent">
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/win1kg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/barCalories"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingTop="10dp"
+                android:text="@string/calorieswin"
+                android:textColor="#00001a"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <com.abdulrahman.asus.PerfectHealth.widgets.myTextView
+                android:id="@+id/Awin1kg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="15dp"
+                android:textColor="#515151"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
